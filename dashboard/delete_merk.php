@@ -5,5 +5,5 @@ $sql="DELETE FROM merk WHERE id=?";
 $st = $dbh->prepare($sql);
 $st->execute([$_iddel]);
 // redirect page
-header('location:list_merk.php');
+echo '<meta http-equiv="refresh" content="0;url=list_merk.php">'
 ?>

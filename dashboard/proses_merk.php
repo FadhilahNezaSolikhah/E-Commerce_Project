@@ -25,5 +25,5 @@ require_once 'dbkoneksi.php';
     $st = $dbh->prepare($sql);
     $st->execute($ar_data);
    }
-   header('location:list_merk.php');
+   echo '<meta http-equiv="refresh" content="0;url=list_merk.php">'
 ?>
